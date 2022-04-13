@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07_使用after伪类解决高度塌陷问题</title>
+    <style>
+        .box1{
+            border: 10px red solid;
+            
+        }
+
+        /* 高度塌陷 */
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: #bfa;
+            float: left;
+        }
+        /* CSS做自己的事，after伪类 
+        
+        行内元素，display转换成块元素*/
+        .box1::after{
+            content:"";
+            display: block;
+            clear:both;
+        }
+
+
+
+
+
+        /* .box3{
+            clear:both
+        } */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+         <!-- <div class="box3"> -->
+        </div>
+    </div>
+    
+</body>
+</html>

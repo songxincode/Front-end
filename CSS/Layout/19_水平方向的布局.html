@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19_水平方向的布局</title>
+    <style>
+        .box1{
+            width: 800px;
+            height: 200px;
+            /* background-color: #bfa; */
+            border: 10px red solid;
+        }
+
+        .inner{
+            width: 200px;;
+            height: 100%;
+            background-color: #bfa;
+            margin-left: auto;
+            margin-right:auto;
+            /* marin: 0 auto */
+
+        }
+        /* 
+        1.元素在其父元素中水平方向由一下几个属性共同决定：
+        margin-left
+        border-left
+        padding-left
+        width
+        padding-right
+        border-right
+        margin-right
+        
+        把必须满足的公式：
+        以上七个值相加 = 父元素内容区的宽度
+        INNTER          实际  
+        marin-left      0
+        border-left     0
+        padding-left    0
+        width 200px
+        padding-right   0
+        border-right    0
+        marin-right     0
+        不等于就称为过度约束，没有auto，自动调整margin-right
+
+        auto：width，margin-left，margin-right
+
+        1.如果将一个宽度和一个外边距设置为auto，宽度就是拉到最大
+        2.三个为auto，外边距0，宽度最大
+        3.两个外边距为auto，则两者相同，相对于父元素居中
+        */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner"></div>
+    </div>
+    
+</body>
+</html>

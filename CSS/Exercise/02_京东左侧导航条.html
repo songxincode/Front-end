@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_京东左侧导航条</title>
+    <link rel="stylesheet" href="../CssReset/reset.css">
+    <style>
+        /* 网页背景颜色 */
+        body{
+            background-color: #bfa;
+            /* font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif; */
+        }
+
+        /* 设置菜单外部容器 */
+        .left_nav{
+            width:190px;
+            height: 450px;
+            padding: 10px 0;
+            background-color: #fff;
+            
+        }
+
+        /* 每个item */
+        .cate_menu_item{
+            height: 25px;
+            /* 文字在父元素中垂直居中 
+            height = line-height*/
+            line-height: 25px;
+            padding-left: 18px; 
+            /* 由于没写宽度会自动调整不会溢出 */
+            font-size: 0px;
+            
+        }
+
+        /* 斜杠字体 */
+        .cate_menu_slash{
+            padding: 0 2px;
+            font-size: 12px;
+            /* float:left; */
+        }
+
+        /* .cate_menu{
+            height: 450px;
+            padding: 10px 0;
+            background-color: #fefefe;
+            color: #636363;
+            margin-top:  10px;
+            overflow: hidden;
+        } */
+
+
+
+        
+        /* 鼠标移入状态 */
+        .cate_menu_item:hover{
+            background-color: #d9d9d9 ;
+        }
+
+        /* 超链接文字样式 */
+        .cate_menu_item a{
+            color: #333;
+            /* 去除下划线 */
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* 超链接hover */
+        .cate_menu_item a:hover{
+            color: #c81623;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="left_nav">
+        <ul class="cate_menu">
+            <li class="cate_menu_item">
+                <a href="#">家用电器</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">手机</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">运营商</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">数码</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">电脑</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">办公</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">家居</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">家具</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">装潢</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">厨具</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">男装</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">女装</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">童装</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">内衣</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">美妆</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">个护清洁</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">宠物</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">女鞋</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">箱包</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">钟表</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">珠宝</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">男鞋</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">运动</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">户外</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">房产</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">汽车</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">汽车用品</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">母婴</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">玩具乐器</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">食品</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">酒类</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">生鲜</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">特产</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">艺术</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">礼品鲜花</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">农资绿植</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">医疗保健</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">计生情趣</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">图书</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">文娱</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">电子书</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">机票</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">酒店</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">旅游</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">生活</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">理财</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">众筹</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">白条</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">保险</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">安装</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">维修</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">清洗</a>
+                <span class="cate_menu_slash">/</span>
+                <a href="#">二手</a>
+            </li>
+            <li class="cate_menu_item">
+                <a href="#">工业品</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

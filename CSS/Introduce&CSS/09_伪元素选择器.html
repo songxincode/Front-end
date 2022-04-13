@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09_伪元素选择器</title>
+
+    <style>
+        /* 位元素：特殊位置 假象的
+        ::first-letter 第一个字母
+        ::first-line 第一行
+        ::selection 选中的内容
+        ::before 元素的开始
+        ::after     元素的最后
+        结合content属性
+
+        ****注意：q标签的特征是会有双引号
+        */
+        p::first-letter{
+            color: red;
+        }
+        p::first-line{
+            background-color: blue;
+        }
+        p::selection{
+            color: brown;
+        }
+
+        div::before{
+            content: "🤣";
+            color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <q>我的世界</q>
+    <div>啊啊 啊啊 我的</div>
+    <p> 
+        dssssssd dddddddddddddd<br>
+        aaaaaaa
+    </p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_Clear</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            float: left;
+        }
+
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            float: right;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* 由于box1的浮动，导致box3位置上移 
+            
+            可以使用clear清楚浮动元素当前元素产生的影响
+            left
+            right
+            both 最大影响的那一侧
+            通过设置外边距来实现的
+            */
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <!-- .box1+.box2+.box3回车 -->
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

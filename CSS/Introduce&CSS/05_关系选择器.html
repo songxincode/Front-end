@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_关系选择器</title>
+
+    <style>
+        /* 
+        父元素：直接包含子元素的元素叫做父元素 
+        子元素：直接被父元素包含的元素叫做子元素
+        祖先元素：直接或间接包含后代元素的叫做祖先元素
+        后代元素：直接或间接被祖先元素包含的元素叫做后代元素
+        兄弟元素：拥有相同父元素的元素
+
+        */
+        /* 
+        子元素选择器：
+        div的子元素span：
+        */
+        div>span{
+            color: brown;
+        }
+        /* 
+        后代元素选择器：
+        div中所有的span:
+        */
+        div span{
+            color: blueviolet;
+        }
+        
+        /* 
+        兄弟元素选择器：
+        p紧挨后的span：+
+        下边所有的兄弟元素：~
+        */
+
+
+        p ~ span{
+            color:darkblue;
+        }
+
+        p + span{
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            我的div中的p元素<br>
+            <span>我的p元素中的span</span>
+        </p>
+        <span>我的div中的span元素</span>
+        <span>我的div中的span2元素</span>
+    </div>
+</body>
+</html>

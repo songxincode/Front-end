@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08_Clearfix</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* BFC */
+            /* overflow: hidden;  */
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            margin-top: 100px;
+        }
+
+        /* 做一个阻隔，隔离外边距 */
+        /* .box1::before{
+            content: "";
+            display: table;
+        } */
+            /* display: table 
+            before解决外边距重叠
+            after解决高度塌陷
+            
+            .clearfix::before,
+            .clearfix::after{
+                content:'';
+                display:table;
+                clear:both;
+
+            }
+            
+            */
+        
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

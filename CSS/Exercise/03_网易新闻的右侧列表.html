@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_网易新闻的右侧列表</title>
+    <link rel="stylesheet" href="../CssReset/reset.css">
+    <style>
+        body{
+            /* 背景颜色 */
+            background-color: #bfa;
+            /* 字体 */
+            line-height: 1.5;
+            font-size: 12px;
+        }
+
+        .news_wrapper{
+            /* 宽高，上边界 */
+            width: 300px;
+            height: 324px;
+            margin-top: 27px;
+            /* 背景颜色 */
+            background-color: rgb(255,255,255);     
+        }
+
+        .list_title{
+            /* 上边框 */
+            border-top: 1px solid #ddd;
+
+            /* 长宽 */
+            height:41px;
+        }
+
+        .news_title{
+            /* 字体 */
+            font-size: 16px;
+            font-weight: bold;
+            /* 长宽和三围 */
+            border-top: 1px solid #f23440;
+            /* 上边距上移1px让border覆盖住list_title的上border */
+            /* 方便后续根据字体长度调整上划线效果 */
+            margin-top: -1px;
+            padding: 6px 0px 10px 0px;
+            /* float:left 文本或图像会移至父元素中的左侧。 */
+            float: left;
+            position: relative;
+        }
+
+        a{
+            /* 颜色 */
+            color: #404040;
+            /* 下划线*/
+            text-decoration: none;
+        }
+
+        /* 图片的超链接 */
+        .bg{
+            color: #fff;
+            margin-top: -30px;
+            padding-left: 30px;
+            font-weight: bold;
+            font-size: 16px;
+
+            /* background-image: linear-gradient(transparent, #000000);
+            background-size: auto 100%; */
+        }
+
+        /* 图片容器 */
+        .list_img{
+           
+            height:150px
+        }
+
+        /* 新闻列表 */
+        .news_list{
+            margin-top: 12px;
+
+            /* 设置项目符号（临时） */
+            
+            
+        }
+        /* 伪元素 */
+        .news_list li::before{
+            content: '■';
+            color: #dddddd;
+            font-size: 12px;
+            margin-left: 3px;
+            
+        }
+        /* 列表 */
+        .news_list > li{
+            line-height: 30px;
+            height: 30px;
+        }
+
+        /* li文字 */
+        .news_list li a{
+            color: #666666;
+        }
+
+        /*超链接变色 */
+        .news_list li a:hover{
+            color: #f23440;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 体育新闻列表的外侧容器 -->
+    <div class="news_wrapper">
+        <!-- 第一部分：标题标签 -->
+        <div class="list_title">
+            <h2 class="news_title">
+                <a href="https://sport.163.com">体育</a>
+            </h2>
+        </div>
+        <!-- 第二部分：图片容器 -->
+        <div class="list_img">
+            <!-- 超链接 -->
+            <a href="https://www.163.com/sports/article/H4O4BU5C00058781.html" alt="C罗">
+                <!-- 图片和标题 -->
+                <img src="https://cms-bucket.ws.126.net/2022/0412/5c73c71fj00ra7ejs001oc000go00b4c.jpg?imageView&amp;thumbnail=300y150">
+                <div class="bg">
+                    <h3>C罗晒照满脸笑意 球迷看不下去了</h3>
+                </div>
+            </a>         
+        </div>
+        <!-- 第三部分：新闻列表 -->
+        <ul class="news_list">
+            <li>
+                <a href="">他张口就要8000万 今夏辅佐詹皇迎人生巅</a>
+            </li>
+            <li>
+                <a href="">詹姆斯威少多卖票是假，浓眉自甘堕落是</a>
+            </li>
+            <li>
+                <a href="">比肩姚明神迹！双鬓斑白的他是个90后</a>
+            </li>
+            <li>
+                <a href="">威少在湖人是如何变得不会打球的</a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>

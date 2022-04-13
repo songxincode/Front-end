@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_图片列表</title>
+    <link rel="stylesheet" href="../CssReset/reset.css">
+    <style>
+        body{
+            background-color: #bfa;
+        }
+        .img_list{
+            width: 190px;
+            height: 470px;
+            overflow: hidden;
+            /* 调试所用 */
+            margin: 70px auto;
+            background-color: #f4f4f4;
+
+        }
+
+        .img_list li:not(:last-child){
+            margin-bottom: 50px;
+        }
+
+        .img_list img{
+            width: 100%
+        }
+
+        
+    </style>
+</head>
+<body>
+    <ul class="img_list">
+        <li>
+            <a href="javascript:;">
+            <img src="../练习的截图/thread.jpg" alt="">
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:;">
+            <img src="../练习的截图/thread.jpg" alt="">
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:;">
+            <img src="../练习的截图/thread.jpg" alt="">
+            </a>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_复合选择器</title>
+
+    <style>
+        /* 第一种：交集选择器 
+        div+web2 同时满足两个条件 
+        顺序：标签，id，class*/
+        div.web2{
+            color:red;
+            font-size: 30px;
+        }
+        /* 第二种：选择器分组，并集选择器
+        一种样式，多个选择器*/
+        h1,.web1,#heima{
+            color: greenyellow;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>eeee</h1>
+    <p class="web1">JavaScript开发必会基础：</p>
+    <p id="heima">黑马程序员JavaScript全套教程，</p>
+    <p class="web2">Web前端必学的JS入门教程，</p>
+    <p>零基础JavaScript入门</p>
+    <p>12222</p>
+    <div class="web2">我的div元素</div>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_属性选择器attribute selectors</title>
+</head>
+    <style>
+        /* 元素+属性选择器 
+        1.[属性名]
+        2.[属性名=属性值]
+        3.[属性名^=属性值]
+        4.[属性名$=属性值]
+        5.[属性名*=属性值]
+        
+        
+        */
+
+
+        p[title]{
+            color: brown;
+        }
+
+        [title=abc]{
+            color: blue;
+        }
+
+    </style>
+
+
+<body>
+    <h1 title="abc">少校离家老大回</h1>
+    <p>第一行</p>
+    <p title="abc">第二行</p>
+    <p>第三行</p>
+    <p title="123">第四行</p>
+    <p>第五行</p>
+</body>
+</html>

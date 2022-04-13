@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_高度塌陷和BFC</title>
+    <style>
+        .outer{
+            /* 被内容撑开 */
+            height: auto;
+            width: auto;
+            border:10px red solid;
+
+
+            /* BFC:Block Formatting Context 块级格式化环境  
+            1.是一个css中的隐含属性，可以为一个元素开启bfc
+            2.开启后，该元素会变成独立的布局区域
+            
+            特点:
+            1.不会被浮动元素所覆盖
+            2.开启bfc的元素，子元素和父元素外边距不会重叠
+            3.可以包含浮动的子元素 ******
+            
+            */
+            /* float: left; */
+            /* display: inline-block; */
+            overflow: auto;
+            /* overflow:  scroll 不好
+                          auto
+                          hidden */
+            
+        }
+        .inner{
+            height: 200px;
+            width: 200px;
+            background-color: #bfa;
+            /* 浮动后，高度塌陷overflow */
+            float:left;
+            margin-bottom: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+    <div style="width:400px; height:400px; background-color: yellow;"></div>
+</body>
+</html>

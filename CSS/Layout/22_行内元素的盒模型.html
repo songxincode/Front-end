@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22_行内元素的盒模型</title>
+    <style>
+        .s1{
+            background-color: yellow;
+            /* 行内元素的盒模型 
+            1.宽高无效
+            2.padding， 垂直方向不会影响页面布局
+            3.border, 同上
+            4.margin,同上
+            
+            
+            */
+            width: 100px;
+            height: 100px;
+            /* padding: 100px 100px; */
+            /* border: 10px red solid; */
+        }
+
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: #bfa;
+        }
+
+        a{
+            /* display 用来设置元素显示的类型
+            1.inline 设置为行内元素
+            2.block  块元素
+            3.inline-block 行内块元素 不会独占一行，可以设置宽高
+            缺点：行内块儿元素会换行（空格），* 一般不用
+            4.table 表格
+            5.none 不显示
+            
+            */
+            /* display: inline; */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="javascript:;">超连接</a>
+    <span class="s1">我是span</span>
+    <div class="box1">111</div>
+</body>
+</html>

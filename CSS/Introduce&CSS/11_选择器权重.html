@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_选择器权重</title>
+
+    <style>
+        .red{
+            color: red;
+        }
+
+
+        div{
+            color: blue;
+        }
+
+        #box1{ 
+            color: green;
+        } 
+
+        /* 
+        选择器权重：
+        内联：      1000
+        id：        100
+        类和伪类：   10
+        元素：       1       
+        */
+        
+    </style>
+
+</head>
+<body>
+    <div id="box1" class="red" style="color:aqua">
+        我是div—first
+    </div>
+</body>
+</html>
