@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_其他文本的样式</title>
+    <style>
+        .box1{
+            font-size: 50px;
+            /* 设置文本修饰
+            text-decoration: 
+            1.underline
+            2.none
+            3.line-through
+            4.overline
+            
+            省略号
+            */
+            text-decoration: underline red;
+        }
+
+
+        .box2{
+            /* white-space 设置网页如何处理空白
+            可选值: 
+            nomal 
+            nowrap 不换行
+            pre 保留空白
+            
+            
+            
+            */
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        今天的天气真不错！
+    </div>
+
+    <div class="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem amet repellendus omnis itaque harum perspiciatis reprehenderit doloremque fugiat eligendi minus? Cumque quibusdam vero quisquam numquam autem eaque voluptatem voluptate libero.
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_京东轮播图</title>
+    <link rel="stylesheet" href="../CssReset/reset.css">
+    <style>
+
+        
+
+        
+        .silder_list{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            
+            position: relative;
+        }
+
+        ul > li{
+            position: absolute;
+        }
+        /* 通过修改元素层级 */
+
+        .silder_list li:nth-child(4){
+            z-index: 1;
+        }
+
+        /* 图片尺寸大小 */
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 设置导航点儿 */
+        .dots a{
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255,255,255,.4);
+            /* 行内不支持设置宽高，改成块元素 */
+            /* display: block; */
+            /* 向左浮动  BFC*/
+            float: left;
+
+            border-radius: 50%;
+            margin-left: 5px;
+
+            border: 2px solid transparent;
+
+             background-clip: padding-box;
+            
+        }
+
+        /* 给dots定位 */
+        .dots{
+            position: absolute;
+            z-index: 9999;
+
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .dots a.active,
+        .dots a:hover{
+            background-color: #fff;
+            border: 2px solid rgba(255,255,255,.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="slider_container">
+        <ul class="silder_list">
+            <li>
+                <a href="#">
+                    <img src="../练习的截图/jd1.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../练习的截图/jd2.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../练习的截图/jd3.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../练习的截图/jd4.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../练习的截图/jd5.jpg">
+                </a>
+            </li>
+
+            <div class="dots">
+                <a class="active" href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>

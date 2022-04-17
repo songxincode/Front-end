@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_字体</title>
+    <style>
+        /* font-face可以将服务器中的字体直接提供给用户使用 */
+        @font-face {
+            font-family: 'myfont';
+            src: url(./ZCOOLKuaiLe-Regular.ttf);
+        }
+
+        p{
+            /* 字体相关样式 
+            前景色
+            字体大小 em, rem 根元素font-size
+            字体族：serif sans-serif monospace
+            serif：衬线字体
+            sans-serif：非衬线字体
+            monospace: 等宽字体
+            cursive: 草书字体
+            fantasy：虚幻字体
+            */
+            color: violet;
+            font-size: 40px;
+
+            font-family: myfont;
+        }
+    </style>
+</head>
+<body>
+    <span>今天天气真不错！aaaaaa</span>
+    <span>今天天气真不错！</span>
+    <P>今天天气真不错！aaaaaabcdefgh</P>
+    <P>今天天气真不错！aadsasdfdefah</P>
+</body>
+</html>

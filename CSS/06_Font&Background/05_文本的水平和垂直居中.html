@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_文本的水平和垂直居中</title>
+    <style>
+        div{
+            width: 1100px;
+            border: 1px red solid;
+            /* 水平对齐 text-align
+            可选值：
+            1.left 左侧对齐
+            2.right 右侧对齐
+            3.center 居中对齐
+            4.justify 两端对齐
+            */
+
+            text-align: justify;
+
+            /* 垂直对齐 
+            baseline 默认 基线对齐
+            top 顶部对齐
+            bottom 底部对齐 子元素和父元素
+            middle 
+            */
+            font-size: 50px;
+            
+        }
+
+        span{
+            font-size: 20px;
+            border: 1px black solid;
+            vertical-align:middle;
+        }
+
+        p{
+            border: 1px red solid;
+            
+        }
+
+        img{
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div>今天天气hello<span>真不错Hello</span>你说呢</div>
+    <!-- <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio repellat explicabo vitae debitis porro minus ab quas quibusdam aliquid voluptas unde enim tempora possimus expedita temporibus ea culpa, doloremque nemo? </div> -->
+    <p>
+        <img src="../练习的截图/jd3.jpg">
+    </p>
+</body>
+</html>

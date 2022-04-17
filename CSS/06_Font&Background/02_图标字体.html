@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_图标字体</title>
+    <link rel="stylesheet" href="./fontawe/css/all.css">
+    <style>
+        li{
+            list-style: none;
+
+        }
+
+        /* 伪元素 */
+        li::before{
+            content: '\f1b0';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: blue;
+            margin-right: 10px;
+/* 
+            fab
+            font-family: 'Font Awesome 5 Brands';
+            fas
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free'; */
+        }
+    </style>
+</head>
+<body>
+    <!-- 图标字体（iconfont） 
+    将图标设置为字体，用font-face的形式对字体进行引入
+    阿里矢量图库
+    fontawesome
+    
+    使用：
+    css：将all.css引入到网页中
+    1.通过类名来使用图标字体
+    -->
+    
+
+
+    <!-- icon -->
+    <i class="fas fa-bell" style="font-size: 40px;"></i>
+
+
+    <!-- 另一种方法 -->
+    <ul>
+        <!-- <li><i class="fas fa-star"></i>锄禾日当午</li>
+        <li ><i class="fas fa-star"></i>锄禾日当午</li>
+        <li ><i class="fas fa-star"></i>锄禾日当午</li>
+        <li ><i class="fas fa-star"></i>锄禾日当午</li> -->
+
+        <li>锄禾日当午</li>
+        <li>锄禾日当午</li>
+        <li>锄禾日当午</li>
+        <li>锄禾日当午</li>
+    </ul>
+    <!-- 实体 -->
+    <span class="fas">&#xf0f3;</span>
+</body>
+</html>
