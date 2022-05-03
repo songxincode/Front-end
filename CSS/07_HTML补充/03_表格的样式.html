@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_表格的样式</title>
+    <style>
+        table{
+            width: 30%;
+            border: 1px solid black;
+            /* border-spacing: 0; */
+
+            /* border-collaps  设置边框合并
+               border-spaceing 边框距离 */
+
+            border-collapse: collapse;
+            /* margin: 0 auto; */
+
+        }
+
+        td{
+            border: 1px solid black;
+            /* 垂直居中，其他的只会影响文字 */
+            vertical-align: middle;
+            /* 文字居中 */
+            text-align: center;
+        }
+        /* 位类选择器 */
+        tr:nth-child(2n){
+            background-color: #bfa;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>年龄</td>
+            <td>城市</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>18</td>
+            <td>上海</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>沙师弟</td>
+            <td>男</td>
+            <td>20</td>
+            <td>高老庄</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>猪八戒</td>
+            <td>男</td>
+            <td>21</td>
+            <td>天蓬元帅</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>18</td>
+            <td>上海</td>
+        </tr>
+    </table>
+</body>
+</html>

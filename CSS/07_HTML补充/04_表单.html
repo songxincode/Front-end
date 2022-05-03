@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_表单</title>
+</head>
+<body>
+    <!-- 将本地数据，提交数据给远程服务器
+    form的属性：
+    1.action:地址
+    2.
+    
+    -->
+    <form action="./target.html">
+        <input name='username' type="text">
+        <br><br>
+        <!-- 默认 checked -->
+        <input name="chose" type="radio" value="a" checked>
+        <input name="chose" type="radio" value="b">
+        <br><br>
+        <input type="submit" value="提交">
+        <br><br>
+        <select name="select">
+            <option value="1">选项1</option>
+            <option selected value="2">选项2</option>
+            <!-- 默认：selected -->
+            <option value="3">选项3</option>
+        </select>
+    </form>
+</body>
+</html>

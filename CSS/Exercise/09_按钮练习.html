@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09_按钮练习</title>
+    <style>
+        a:link{
+            display: block;
+            width: 93px;
+            height: 29px;
+            background-image: url(../练习的截图/link.png);
+        }
+
+        a:hover{
+            background-image: url(../练习的截图/hover.png);
+        }
+
+        a:active{
+            background-image: url(../练习的截图/active.png);
+        }
+        /* 产生白色跳转的情况：
+        图片属于网页的外部资源，外部资源需要浏览器单独发送请求去下载。
+        1.加载网页+ 2.加载图片 
+        浏览器加载图片是按需加载，不用不加载。
+
+        */
+    </style>
+</head>
+<body>
+    <a href="javascript:;"></a>
+</body>
+</html>

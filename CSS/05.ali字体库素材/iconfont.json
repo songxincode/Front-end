@@ -1,0 +1,16 @@
+{
+  "id": "3370889",
+  "name": "css练习",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "478791",
+      "name": "位置",
+      "font_class": "weizhi",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    }
+  ]
+}

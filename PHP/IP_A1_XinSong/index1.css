@@ -1,0 +1,399 @@
+body{
+    font-family:  Arial, Helvetica, sans-serif;
+}
+/* menu_container */
+.menu_container{
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    /* background-color: rgb(27,157,254); */
+    background-color: rgb(35,47,62);
+    top:0;
+    left:0;
+}
+
+.first_cate_menu{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+    margin-top: 20px;
+    
+}
+
+
+
+.second_cate_menu,.last_cate_menu{
+    padding-left: 40px;
+}
+
+
+.first_cate_menu:first-of-type{
+    margin-top: 40px;
+}
+
+/* all blocks style */
+.second_cate_menu_item,.last_cate_menu_item{
+    list-style: none;
+    display: none;
+    position:relative;
+}
+
+/* hover then display the second layer */
+.first_cate_menu:hover .second_cate_menu_item{
+    display: block;
+}
+
+/* hover then display the last layer*/
+.second_cate_menu_item:hover .last_cate_menu_item{
+    display: block;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.menu_style{
+    display: block;
+    width: 198px;
+    height: 58px;
+    text-decoration: none;
+    background-color: rgb(255,255,255);
+    /* border: solid 1px rgb(204,204,204);  */
+    border-radius: 20px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(49,49,49);
+}
+
+a:hover{
+    background-color: rgb(131, 126, 127);
+    color:#fff;
+}
+
+#page_title{
+    font-size: 37px;
+    color: #fff;
+    /* background-color:rgb(211, 43, 14) ; */
+    font-weight: bold;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#page_title2{
+    font-size: 37px;
+    color: rgb(255,153,0);
+    /* background-color:rgb(211, 43, 14) ; */
+    font-weight: bold;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* html items_container*/
+.items_container{
+    left: 400px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+
+
+
+
+/* html shopping_cart*/
+.shopping_cart{
+    left: 400px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(255,153,0);
+}
+
+
+
+#it,#sc{
+    width: 100%;
+    height: 100%;
+}
+
+/* fint awesome */
+
+#frozen::before{
+    content: '\f810';
+    font-family: 'Font Awesome 5 free';
+    font-size: 24px;
+    margin-right: 4px;;
+}
+
+#fresh::before{
+    content: '\f5d1';
+    font-family: 'Font Awesome 5 free';
+    font-size: 24px;
+    margin-right: 4px;;
+}
+#drink::before{
+    content: '\f0f4';
+    font-family: 'Font Awesome 5 free';
+    font-size: 22px;
+    margin-right: 4px;;
+}
+#home::before{
+    content: '\f015';
+    font-family: 'Font Awesome 5 free';
+    font-size: 22px;
+    margin-right: 4px;;
+}
+#pet::before{
+    content: '\f5d7';
+    font-family: 'Font Awesome 5 free';
+    font-size: 22px;
+    margin-right: 4px;;
+}
+ 
+table{ 
+    width:40%;
+    margin: 0 200px;
+    border-collapse: collapse;
+}
+
+
+
+th{
+    text-align:center;
+    background-color: rgb(35,47,62);
+    color: #fff;
+    
+}
+
+.t1 td{
+    text-align:center;
+    border: 2px solid black;
+}
+
+
+
+
+#header1, #header2,#header3{
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+.pic{
+    width: 440px;
+    height: 300px;
+    margin: 0 400px;
+}
+
+#sub_form{
+    margin-left:400px;
+    font-size: 20px;
+}
+
+#add_botton{
+    margin-left: 10px;
+    background-color: rgb(255,60,0);
+    border: 2px solid transparent;
+    padding: 13px 75px 8px 75px ;
+    border-radius: 5px;
+}
+
+#add_to_cart{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 15px;
+    
+}
+
+#in_qty{
+    width: 40px;
+    height: 35px;
+    font-size: 20px;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    height: 50px;
+    width: 50px;
+
+}
+
+#header1::after{
+    content: '\f54e';
+    font-family: 'Font Awesome 5 free';
+    color: rgb(255,153,0);
+    font-size: 30px;
+    margin-left: 4px;;
+}
+
+#header2::after{
+    content: '\f07a';
+    font-family: 'Font Awesome 5 free';
+    color: rgb(255,153,0);
+    font-size: 30px;
+    margin-left: 4px;;
+}
+
+
+#header3::after{
+    content: '\f53d';
+    font-family: 'Font Awesome 5 free';
+    color: rgb(255,153,0);
+    font-size: 30px;
+    margin-left: 4px;;
+}
+
+
+
+.tr_1:nth-child(2n){
+    background-color: #fff;
+}
+
+.tr_2{
+    font-weight: bold;
+}
+
+#qty99{
+    width: 100px;
+}
+
+#order_form{
+    margin: 20px 330px;
+}
+
+#ship_info{
+    background-color: #222;
+    width: 815px;
+    height:30px;
+    margin: 20px 0px 20px 200px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#ship_info a{
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+}
+
+#order_form>label::after{
+    content: '*';
+    color: #e02b27;
+    font-size: 1.2rem;
+    margin: 0 0 0 5px;
+}
+
+#reset{
+    margin-top: 10px;
+    margin-left: 2px;
+    background-color: rgb(47, 46, 46);
+    border: 2px solid transparent;
+    padding: 13px 60px 8px 60px ;
+    border-radius: 5px;
+}
+
+#reset_font{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 15px;
+    
+}
+
+
+#payment{
+    margin-left: 10px;
+    background-color: rgb(255,60,0);
+    border: 2px solid transparent;
+    padding: 13px 66px 8px 66px ;
+    border-radius: 5px;
+}
+
+#payment_font{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 15px;
+    
+}
+
+#postcode{
+    width: 54px;
+}
+
+#address{
+    margin-left: 21px;
+    width: 441px;
+}
+
+#suburb{
+    margin-left: 16px;
+}
+
+#email{
+    margin-left:42px ;
+    width: 441px;
+}
+
+#payment_font::after{
+    content: '\f35a';
+    font-family: 'Font Awesome 5 free';
+    color: #fff;
+    font-size: 15px;
+    margin-left: 8px;
+    font-weight: 900;
+}
+
+#outer{
+        width: 700px;
+        margin: 50px 300px;
+        /* 设置阴影 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+}
+
+#mailbox{
+    margin: 0px;
+    width: 700px;
+    text-align: center;
+}
+
+.email_total{
+    font-weight: bold;
+    margin-right: 0;
+    color: #e02b27;
+}
+
+.email_title{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(63,168,71);
+    margin: 2px auto;
+    text-align: center;
+}
+
+#success_icon{
+    margin: 0px;
+}
+
+#success_icon::before{
+    content: '\f058';
+    font-family: 'Font Awesome 5 free';
+    color: rgb(63,168,71);
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 350px;
+}
+
+.email_header{
+    font-size: 10px;
+}

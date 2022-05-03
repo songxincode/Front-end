@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_电影卡片</title>
+    <link rel="stylesheet" href="../06_Font&Background/fontawe/css/all.css">
+    <link rel="stylesheet" href="../CssReset/reset.css">
+    <style>
+        .wrapper{
+            width: 240px;
+            /* 高度不确定，被内容撑开 */
+            background-color: #fff;
+            /* 居中 */
+            margin: 150px auto;
+            /* 边框阴影 */
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .img_wrapper img{
+            /* 继承父元素大小 */
+            width: 100%;
+
+        }
+
+        .info{
+            padding: 0 18px;
+        }
+
+        .info .title{
+            font-size: 18px;
+            color: #717171;
+            margin: 13px 0 15px 0;
+
+        }
+        /* 伪类，位置图标 */
+        .info .subtitle::before{
+            content: '\f3c5';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900; 
+
+            margin-left: 4px;
+            margin-right: 7px;
+        }
+        .info .subtitle{
+            color: #acaaaa;
+            font-size: 14px;
+        }
+
+        /* 段落 */
+        .info .description{
+            color: #acaaaa;
+            font-size: 14px;
+            margin-left: 4px;
+            margin-top: 17px;
+            margin-bottom: 18px;
+            /* 行间距 line-height - font-size = 行间距*/
+            line-height: 20px;
+
+        }
+
+        .star_wrapper{
+            height: 46px;
+            border-top: 1px solid #e9e9e9;
+            color: #ddd;
+            padding: 0 16px;
+            line-height: 46px;
+        }
+
+        .star{
+            float:left;
+           
+            
+        }
+
+        .star_wrapper .light{
+            color: #b9cb41;
+        }
+
+        .star_wrapper .fa-weibo{
+            float:right;
+            padding-top:16px ;
+           
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <!-- 外层容器 -->
+    <div class="wrapper">
+        <!-- 上部图片容器 -->
+        <div class="img_wrapper">
+            <img src="../练习的截图/1.jpg">
+        </div>
+        <!-- 内容区容器 -->
+        <div class="info">
+            <div class="title">Animation films</div>
+            <div class="subtitle">Animations</div>
+            <div class="description">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</div>
+        </div>
+        <!-- 评分容器 -->
+        <div class="star_wrapper">
+            <ul class="star">
+                <li class="fa fa-star light"></li>
+                <li class="fa fa-star light"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+            </ul>
+            <span class="fab fa-weibo"></span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_绝对定位</title>
+    <style>        
+        body{
+            font-size: 60px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            
+        }        
+        
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* 绝对定位（absulte）
+            特点：
+            1.元素开启相对定位后，不设置偏移量，元素的“位置”不发生变化 
+            2.文档流中脱离
+            3.会改变元素的性质
+            4.行内变成块，被内容撑开（块元素脱离文档流之后不独占一行，默认被内容撑开）
+
+            相对于其包含块的定位：（containing block）
+            1.文档流，普通元素 当前元素最近的祖先块元素
+            2.绝对定位情况下，包含块就是离他最近的，开启定位的，祖先元素
+                1.相对于根元素定位 html,body,......
+
+            html 初始包含块
+            */
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            
+        }        
+        
+        .box3{
+            width: 800px;
+            height: 200px;
+            background-color: yellow;
+            
+        }
+
+        .box4{
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            position: absolute;
+        }
+
+        .box5{
+            width: 300px;
+            height: 300px;
+            background-color: aliceblue;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box4">
+        4
+        <div class="box5">
+            5
+            <div class="box2">2</div>
+        </div>
+    </div>
+    
+    <div class="box3">3</div>
+</body>
+</html>

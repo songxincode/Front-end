@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06.导航条结构</title>
+    <link rel="stylesheet" href="../CssReset/reset.css">
+    <link rel="stylesheet" href="../06_Font&Background/fontawe/css/all.css">
+    <link rel="stylesheet" href="../05.ali字体库素材/iconfont.css">
+    <style>
+        body{
+        /* 字体抗锯齿 */
+        -webkit-font-smoothing: antialiased;
+        background-color: #fff;
+        font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        #top_bar_wrapper{
+            width: 100%;
+            background-color: #E3E4E5;
+            border-bottom: 1px solid #ddd;
+            /* 高度被内容（top_bar）撑开， top_bar高度写死不会高度塌陷*/
+        }
+
+        #top_bar_wrapper .top_bar{
+            width: 1190px;
+            height: 30px;
+            line-height: 30px;
+            color: #999;
+            margin: 0 auto;
+        }
+        
+        /* 字体样式 */
+        .top_bar a,
+        .top_bar span{
+            color:#999;
+            text-decoration: none;
+        }
+
+
+
+        .short_cut{
+            float: right;
+        }
+
+        .short_cut li{
+            float:left;
+        }
+
+        #tb_loc .iconfont{
+            font-size: 14px;
+            color: #f10215;
+            margin-right:1px ;
+        }
+        /* hover变红色 *//* 免费注册企业采购，高亮红色 */
+        .top_bar a:hover,.top_bar a.highlight{
+            color: #f10215;
+        }
+
+        /* 分割线 */
+        .spacer{
+            height: 10px;
+            width: 1px;
+            background-color:#ccc ;
+            margin:11px 5px 0;
+        }
+        
+
+        /* 下拉框 */
+
+        .city-list{
+            width: 340px;
+            height: 500px;
+            background-color: #fff;
+            border: 1px solid rgb(204,204,204);
+            display: none;
+            /* 设置绝对高度，使其不占用网页的位置,脱离文档流 */
+            position: absolute;
+            /* 让边框和导航条重合 */
+            top: 30px;
+
+            box-shadow: 1px 2px 1px rgba(0,0,0, 0.1);
+        }
+
+        /* 点击location显示city-list */
+        .location:hover .city-list{
+            display: block;
+
+        }
+        /* current_city尺寸 */
+        .current_city{
+            padding: 0px 10px;
+            border:1px solid transparent;
+            border-bottom:none;
+            height:29px;
+        }
+        /* location尺寸 */
+        .location{
+            
+         float:left;
+        /* 父元素高度写死不会出现高度塌陷问题 */
+        /* location的高度宽度被内容撑开 */
+        
+         
+        }
+
+        .location:hover .current_city{
+            background-color: rgb(167, 38, 38);
+            /* 地址栏边框，无下边，盖住下面*/
+            border:1px solid rgb(204,204,204);
+            border-bottom:none;
+            padding-bottom: 1px;
+            position: relative;
+            z-index: 999;
+            
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 外部容器 -->
+    <div id="top_bar_wrapper">
+        <!-- 内部容器 -->
+        <div class="top_bar">
+            <!-- 左侧菜单 -->
+            <ul class="location" id="tb_loc">
+                <!-- 当前城市 -->
+                <li class="current_city">
+                    <!-- <i class="iconfont icon-weizhi"></i> -->
+                    <i class="iconfont">&#xe61f;</i>
+                    <a href="#">上海</a>
+                </li>
+                <div class="city-list"></div>
+            </ul>
+            <!-- 右侧菜单 -->
+            <ul class="short_cut">
+                <li class="login">
+                    <a href="#">你好，请登录</a>
+                    &nbsp;&nbsp;
+                    <a class="highlight" href="#">免费注册</a>
+                </li>
+                <li class="spacer"></li>
+                <li class="order"><a href="#">我的订单</a></li>
+                <li class="spacer"></li>
+                <li class="myjd">
+                    <a href="#">我的京东</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="spacer"></li>
+                <li class="jdhy"><a href="#">京东会员</a></li>
+                <li class="spacer"></li>
+                <li class="qycg">
+                    <a  class="highlight" href="#">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="spacer"></li>
+                <li class="khfw">
+                    <span>客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="spacer"></li>
+                <li class="wzdh">
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="spacer"></li>
+                <li class="sjjd"><span>手机京东</span></li>
+                <li class="spacer"></li>
+                <li class="sjjd"><a href="#">网站无障碍</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

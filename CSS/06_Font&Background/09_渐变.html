@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渐变</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            /* 通过渐变可以设置一些复杂的背景颜色，实现过度效果*/
+            /* 渐变是image，background-image 
+            right
+            deg  度数
+            turn 圈
+            
+            多颜色平均分配
+            
+            设置面积 (red 50px yellow 70px)
+            */
+            background-image: linear-gradient(to right,pink,cornsilk);
+        }
+
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-image: repeating-linear-gradient(pink 50px ,cornsilk 100px);
+        }
+        /* 径向渐变 放射效果 
+        指定圆心大小
+        circle
+        elipse [ɪˈlɪps] 椭圆
+        at 0,0 圆心位置
+
+        closest-side 最近的一侧
+        fasest-side
+        closest-concer 最近一角
+        */
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-image:radial-gradient(pink,cornsilk)
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

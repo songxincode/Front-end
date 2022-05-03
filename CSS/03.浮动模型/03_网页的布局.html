@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_网页的布局</title>
+    <style>
+        header{
+            width: 1000px;
+            height: 150px;
+            background-color: silver;
+            margin: 0 auto;
+        }
+
+        main{
+            width: 1000px;
+            height: 500px;
+            background-color: #bfa;
+            margin: 10px auto;
+        }
+
+        .left_box{
+            height: 100%;
+            width: 200px;
+            background-color: yellow;
+            float: left;
+        }
+
+        .middle_box{
+            width: 580px;
+            height: 100%;
+            background-color:orange ;
+            float: left;
+            margin: 0px 10px;
+            /* 无用，不包括外边距 */
+            /* box-sizing: border-box; */
+        }
+
+        .right_box{
+            height: 100%;
+            width: 200px;
+            background-color: yellow;
+            float: left;
+        }
+        
+        footer{
+            width: 1000px;
+            height: 150px;
+            background-color: tomato;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- 设置头部 -->
+    <header>
+    </header>
+    <!-- 创建网页主体 -->
+    <main>
+        <nav class="left_box"></nav>
+        <article class="middle_box"></article>
+        <aside class="right_box"></aside>
+    </main>
+    <!-- 网页的底部 -->
+    <footer></footer>
+</body>
+</html>
