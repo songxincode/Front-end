@@ -1,0 +1,122 @@
+[
+    {
+        "Category":"SUV",
+        "Availability":"True",
+        "Brand":"NISSAN",
+        "Model":"X_Trail",
+        "Model_Year":"2015",
+        "Mileage":"36000",
+        "Fuel_Type":"Petrol",
+        "Seats":"7",
+        "Price_Per_Day":"320",
+        "Description":"The Nissan X-TRAIL 2015 is available in Regular Unleaded Petrol and Diesel. Engine sizes and transmissions vary from the SUV 2.0L 6 SP Manual to the SUV"
+    },
+    {
+        "Category":"Sedan",
+        "Availability":"False",
+        "Brand":"Hyundai",
+        "Model":"Sonata",
+        "Model_Year":"2018",
+        "Mileage":"12000",
+        "Fuel_Type":"Petrol",
+        "Seats":"5",
+        "Price_Per_Day":"130",
+        "Description":"The 2018 Hyundai Sonata ranks in the top third of the midsize car class. It has a large trunk, a classy and upscale cabin, an intuitive infotainment system."
+    },
+    {
+        "Category":"SUV",
+        "Availability":"True",
+        "Brand":"Suzuki",
+        "Model":"Jimny",
+        "Model_Year":"2011",
+        "Mileage":"43000",
+        "Fuel_Type":"Petrol",
+        "Seats":"5",
+        "Price_Per_Day":"210",
+        "Description":"Powered by a 1.5-litre naturally aspirated twin-cam four-cylinder petrol engine, the Jimny pushes 75kW/130Nm to its part-time four-wheel-drive system "
+    },
+    {
+        "Category":"Wagon",
+        "Availability":"False",
+        "Brand":"Volkswagen",
+        "Model":"Golf",
+        "Model_Year":"2017",
+        "Mileage":"13586",
+        "Fuel_Type":"CNG",
+        "Seats":"5",
+        "Price_Per_Day":"180",
+        "Description":"The 2017 Volkswagen Golf’s potent engines, athletic handling, high-end interior, and sizeable cargo area help it place in the top half of our compact car rankings."
+    },
+    {
+        "Category":"SUV",
+        "Availability":"True",
+        "Brand":"Mercedes-Benz",
+        "Model":"GLC_Coupe",
+        "Model_Year":"2015",
+        "Mileage":"23586",
+        "Fuel_Type":"Petrol",
+        "Seats":"5",
+        "Price_Per_Day":"480",
+        "Description":"Powertrain options on the Mercedes-Benz GLC Coupe facelift could include a 2.0-litre, four cylinder turbo-petrol engine producing 258bhp."
+    },
+    {
+        "Category":"Sedan",
+        "Availability":"True",
+        "Brand":"Honda",
+        "Model":"Civic",
+        "Model_Year":"2018",
+        "Mileage":"9856",
+        "Fuel_Type":"Petrol",
+        "Seats":"5",
+        "Price_Per_Day":"220",
+        "Description":"The Honda Civic ranks in the top third of the highly competitive compact car class. The Civic has excellent driving dynamics, refined engines."
+    },
+    {
+        "Category":"SUV",
+        "Availability":"False",
+        "Brand":"Jeep",
+        "Model":"Grand Cherokee",
+        "Model_Year":"2017",
+        "Mileage":"12326",
+        "Fuel_Type":"Petrol",
+        "Seats":"7",
+        "Price_Per_Day":"320",
+        "Description":"The 2017 Jeep Grand Cherokee finishes in the middle of our midsize SUV rankings. This is one of the best off-roaders in the class, and it has a comfortable. "
+    },
+    {
+        "Category":"Sedan",
+        "Availability":"True",
+        "Brand":"BMW",
+        "Model":"Serial-3",
+        "Model_Year":"2015",
+        "Mileage":"13316",
+        "Fuel_Type":"Petrol",
+        "Seats":"5",
+        "Price_Per_Day":"280",
+        "Description":"The BMW 3 Series has muscular engines, nimble handling, and adult-friendly rear seats. Still, its below-class-average reliability rating keeps this luxury small car"
+    },
+    {
+        "Category":"Sedan",
+        "Availability":"True",
+        "Brand":"Toyota",
+        "Model":"Camry",
+        "Model_Year":"2013",
+        "Mileage":"43316",
+        "Fuel_Type":"Petrol",
+        "Seats":"5",
+        "Price_Per_Day":"240",
+        "Description":"Despite its lack of engaging handling and user-friendly features, the 2013 Toyota Camry sits near the pinnacle of its class thanks to its top-notch reliability rating"
+    },
+    {
+        "Category":"SUV",
+        "Availability":"True",
+        "Brand":"Holden",
+        "Model":"Captiva",
+        "Model_Year":"2016",
+        "Mileage":"34513",
+        "Fuel_Type":"Petrol",
+        "Seats":"5",
+        "Price_Per_Day":"260",
+        "Description":"Holden’s Captiva is a large SUV that is priced near many mid-sizers, which places it among the least costly wagons that offer seven seats. "
+    }
+]

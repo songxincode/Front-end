@@ -1,0 +1,24 @@
+
+/* 顶部导航条 */
+.topbar{
+    height: 40px;
+    background-color: #333;
+    font-size: 12px;
+}
+
+
+/* 左侧 */
+.topbar .topbar-nav{
+    float: left;
+}
+
+/* 左侧超链接字体 */
+.topbar-nav a{
+    color: #b0b0b0;
+    line-height: 40px;
+}
+
+/* 分隔符 */
+.spacer{
+    color: #424242;
+}

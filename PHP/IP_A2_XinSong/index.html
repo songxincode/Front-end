@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/all.css">
+        <link rel="stylesheet" href="./CssReset/reset.css">
+        <link rel="stylesheet" href="./HertzUTS.css">
+        <title>HertzUTS</title>
+    </head>
+    <body onload="readJson()">
+        <div class="top_bar">
+            <span id="logo">HertzUTS</span>
+            <span id="name">Car Rental Center</span>
+            <form class= "res_form" action="cartpage.php">
+                <button type="submit" id="res_btn">
+                    <i class="fas fa-car" style=" font-family: 'Font Awesome 5 Free';color: #fff;"></i>
+                    <span>Car Reservation</span>    
+                </button>  
+            </form>
+        </div>          
+        <div id="app">
+
+        </div>
+    </body>
+    <script>
+        function readJson(){
+            xml = new XMLHttpRequest();
+            // callback function
+            xml.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    // let response = JSON.parse(JSON.stringify(this.responseText));
+                    let response = this.responseText;
+                    render(response);
+                }
+            };
+            xml.open("GET","cars.json",true);
+            xml.send(null);
+
+        }
+        function render(json){
+            if(json){
+                let items = JSON.parse(json);
+                let card = "";
+                for (let i=0;i<items.length;i++){
+                    let item = items[i];
+                    let model = item['Model'];
+                    let name = item['Brand']+'-'+item['Model']+'-'+item['Model_Year'];
+                    let mile = item['Mileage'];
+                    let fuel = item['Fuel_Type'];
+                    let seat = item['Seats'];
+                    let price = item['Price_Per_Day'];
+                    let status = item['Availability'];
+                    let desc = item['Description'];
+
+                    card += "<div class='car'>";
+                    card += "<img src='./car_pictures/"+ model +".jpg' >";
+                    card += "<div class='car_title'>" + name + "</div>";
+                    card += "<ul class='info'>"
+                    card += "<li>Mileage: "+ mile +" kms</li>";
+                    card += "<li>Fuel_Type: "+ fuel +"</li>";
+                    card += "<li>Seats: "+ seat +"</li>";
+                    card += "<li>Price: $"+ price +" per day</li>";
+                    card += "<li>Avaliability: "+ status +"</li>";
+                    card += "<br>"
+                    card += "<li>Description: "+ desc +"</li>";
+                    card += "<br>"
+                    card += "<button id='res_btn2' onClick=\"add_to_cart('"+model+"','"+name+"','"+price+"','"+status+"')\">Reserve</button>";
+                    card += "</ul>";
+                    card += "</div>";
+
+                    document.getElementById("app").innerHTML = card;
+                }
+            }
+        }
+        
+        function add_to_cart(model,name,price,status){
+            let item = "model="+model+"&name="+name+"&price="+price+"&status="+status;
+            xml2 = new XMLHttpRequest();
+            xml2.onreadystatechange = function(){
+                let response = this.responseText;
+                if(this.readyState == 4 && this.status == 200){
+                    if(response == "false"){
+                        alert("Sorry, the car is not available now. Please try other cars.");
+                    }else{
+                        alert("Add to the cart successfully.");
+                    }
+                    
+                }
+            };
+            xml2.open("POST","shopping_cart.php",true);
+            xml2.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xml2.send(item);
+        }
+    
+    </script>
+
+</html>

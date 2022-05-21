@@ -1,0 +1,69 @@
+body{
+    font:14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}
+
+.form_body{
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+
+    
+}
+
+#info_form{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+
+li {
+    clear: both;
+    list-style: none;
+}
+
+.mark {
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 126px;
+    height: 29px;
+    padding-right: 10px;
+    text-align: justify;
+    /* text-align-last: justify; */
+    line-height: 12px;
+    font-weight: bold;
+}
+
+label.mark2::after{
+    content: '*';
+    color: #e02b27;
+    font-size: 1.2rem;
+    margin: 0 0 0 5px;
+}
+
+.mark3::after{
+    content: '*';
+    color: #e02b27;
+    font-size: 1.2rem;
+    margin: 0 0 0 5px;
+}
+
+.info_title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+}
+
+.total{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#blank{
+    width: 130px;
+}
